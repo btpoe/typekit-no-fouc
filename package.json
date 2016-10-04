@@ -1,0 +1,52 @@
+{
+  "name": "typeshit",
+  "version": "0.0.1",
+  "description": "When forced to chose between a FOUC or lagging the page for fonts to load, the answer is 'no.'",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node build.js --watch=1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btpoe/typeshit.git"
+  },
+  "keywords": [
+    "typekit",
+    "fonts",
+    "async"
+  ],
+  "author": "Brandon Poe <brandonpoe@me.com> (http://brandonpoe.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btpoe/typeshit/issues"
+  },
+  "homepage": "https://github.com/btpoe/typeshit#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "glob": "^7.0.3",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-jasmine": "^0.3.8",
+    "vinyl-fs": "^2.4.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0",
+    "yargs": "^4.6.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  }
+}
