@@ -10,11 +10,11 @@
 </script>
 ```
 
-2. Run `npm install typekit-no-fouc --save` in your project.
+2. Run `npm install fouckit --save` in your project.
 
 3. Include `src/index.js` through your preferred method
- - Browserify: `require('typekit-no-fouc');`
- - Babel / ES2015: `import 'typekit-no-fouc';`
- - Old school: `<script src="path/to/files/typekit-no-fouc/src/index.js"></script>`
+ - Browserify: `require('fouckit');`
+ - Babel / ES2015: `import 'fouckit';`
+ - Old school: `<script src="path/to/files/fouckit/src/index.js"></script>`
 
 Enjoy async typekit sans-FOUC!

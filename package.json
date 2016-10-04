@@ -1,5 +1,5 @@
 {
-  "name": "typekit-no-fouc",
+  "name": "fouckit",
   "version": "0.0.1",
   "description": "When forced to chose between a FOUC or lagging the page for fonts to load, the answer is 'no.'",
   "main": "src/index.js",
