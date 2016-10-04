@@ -1,6 +1,6 @@
 {
   "name": "fouckit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "When forced to chose between a FOUC or lagging the page for fonts to load, the answer is 'no.'",
   "main": "src/index.js",
   "scripts": {
@@ -36,17 +36,5 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "yargs": "^4.6.0"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
   }
 }
