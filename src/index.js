@@ -2,7 +2,13 @@
     if (!window.MutationObserver) return;
 
     function nodeIsTypekitDeclaration(node) {
-        return !!(node.tagName.toLowerCase() === 'style' && (/fonts\.typekit\.net/).test(node.innerHTML));
+        return (
+            node.tagName.toLowerCase() === 'style'
+            &&
+            node.innerHTML.indexOf('typekit.net') > -1
+            &&
+            node.innerHTML.indexOf('@font-face') > -1
+        );
     }
 
     function captureTypekitDeclaration(node) {
