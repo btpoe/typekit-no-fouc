@@ -5,7 +5,7 @@
 <script>
     (function(t,k,f,a,c,e,s){
         t&&(e=k.createElement(f),s=k.getElementsByTagName(a)[0],
-        e.innerHTML=t.getItem(c)&&s.parentNode.insertBefore(e,s))
+        s.parentNode.insertBefore(e,s),e.innerHTML=t.getItem(c))
     })(window.localStorage,document,'style','script','ts.fontFace');
 </script>
 ```
